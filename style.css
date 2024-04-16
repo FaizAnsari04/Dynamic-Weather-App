@@ -8,14 +8,18 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(79, 93, 105);
+    background:url("Images/bg.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .container
 {
     position:relative;
     width: 400px;
     height:554px;
-    background-color: blueviolet;
+    background-color:rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(30px);
+    border:2px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     padding: 20px;
     color:#fff;
@@ -71,14 +75,15 @@ body{
 }
 .weather-box img{
     width:60%;
+    margin-bottom: -30px;
 
 }
 .weather-box .temp{
     position:relative;
-    font-size: 64px;
+    font-size: 65px;
     line-height: 1;
     font-weight: 700;
-    margin:20px 0 6px -30px;
+    margin: 20px ,0px, 6px -30px;
 }
 .weather-box .temp span{
     position: absolute;
@@ -99,6 +104,14 @@ body{
     width: 100%;
     padding:0 20px;
     display:flex;
+}
+.weather-details ,.humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+.weather-details ,.wind{
+    padding-right: 20px;
+    justify-content: flex-end;
 }
 .weather-details .humidity,
 .weather-details .wind
