@@ -26,8 +26,9 @@
     <title>Weather App</title>
   </head>
 
-  <body>
-    <div class="container">
+   <body>
+    <!--
+    <div class="container" id="cityInput">
       <div class="search-box">
         <i class="bx bxs-map"></i>
         <input type="text" placeholder="Enter The Location" />
@@ -73,6 +74,54 @@
             </div>
           </div>
 
+      </div>
+    </div>
+     -->
+     
+     <div class="container">
+      <div class="search-box">
+        <i class="bx bxs-map"></i>
+        <input type="text" id="cityInput" placeholder="Enter The Location" />
+        <button id="Searchbtn" class="bx bx-search"></button>
+      </div>
+    
+      <div class="location-not-found">
+        <h1>Sorry, Location not found!!!</h1>
+        <img src="/Images/404.jpg" alt="404 Error">
+      </div>
+    
+      <div class="weather-box">
+        <div class="box">
+          <div class="info-weather">
+            <div class="weather_img">
+              <img src="Images/Cloud.png" class="weather-image" />
+              <p class="temp">16 <span>C</span></p>
+              <p class="desc">Clouds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="bx bx-water"></i>
+          <div class="text">
+            <div class="info-humidity">
+              <span id="humidity">45%</span>
+            </div>
+            <p>Humidity</p>
+          </div>
+        </div>
+    
+        <div class="wind">
+          <i class="bx bx-wind"></i>
+          <div class="text">
+            <div class="info-wind">
+              <span id="windspeed">12Km/Hr</span>
+            </div>
+            <p>Wind Speed</p>
+          </div>
+        </div>
       </div>
     </div>
     
